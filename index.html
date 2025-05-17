@@ -14,10 +14,24 @@
     <title>Bikewatching</title>
 </head>
 <body>
-    <h1>🚴🏼‍♀️ Bikewatching</h1>
+    <header>
+        <h1>🚴🏼‍♀️ Bikewatching</h1>
+        <label id="time-filter">
+            <input type="range" id="time-slider" min="-1" max="1440" value="-1">
+            <time id="selected-time">12:00 AM</time>
+            <em id="any-time">(any time)</em>
+        </label>
+
+    </header>
     <div id="map">
         <svg></svg>
     </div>
+    <div class="legend">
+        <div style="--departure-ratio: 1; text-align: left">More departures</div>
+        <div style="--departure-ratio: 0.5; text-align: center">Balanced</div>
+        <div style="--departure-ratio: 0; text-align: right">More arrivals</div>
+    </div>
+      
 
 </body>
 </html>
